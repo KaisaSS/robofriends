@@ -30,7 +30,12 @@ function App() {
   } else {
     return (
       <div className="tc">
-        <h1 className="f1">RoboFriends</h1>
+        <div className="title-container">
+          <h1 className="title logo">
+            <i className="fas fa-robot"></i>
+          </h1>
+          <h1 className="title">RoboFriends</h1>
+        </div>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
           <ErrorBoundry>

@@ -1,6 +1,35 @@
-h1 {
-  font-family: fantasy;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.title {
+  display: flex;
+  margin: 10px;
+  font-family: "Press Start 2P", cursive;
   letter-spacing: 5px;
+  font-size: 3rem;
   text-transform: uppercase;
   color: #54318b;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .logo {
+    display: none;
+  }
 }
